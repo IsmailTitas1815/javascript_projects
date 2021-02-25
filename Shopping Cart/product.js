@@ -112,7 +112,6 @@ class Store{
 
 form.addEventListener('submit', addProduct);
 products.addEventListener('click',removeProduct);
-cartItems.addEventListener('click',removeFromCart);
 document.addEventListener("DOMContentLoaded",Store.loadProducts());
 
 function addProduct(e) {
@@ -141,7 +140,3 @@ function removeProduct(e) {
     e.preventDefault();
 }
 
-function removeFromCart(e){
-    CartUI.removeFromCart(e.target);
-    e.preventDefault();
-}
