@@ -121,7 +121,7 @@ function addProduct(e) {
     let id = document.querySelector('#id').value;
 
     if (name === '' || price === '' || category === '' || id==='') {
-        alert("something wrong");
+        ProductsUI.showAlert("Please fill all the gapes",'error')
     }
     else {
         let product = new Product(name, price, category,id);
